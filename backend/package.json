@@ -7,13 +7,12 @@
     "express": "^4.18.2",
     "socket.io": "^4.7.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "undefined"
+    "url": "https://github.com/netobjj/clubs-arrived"
   },
   "author": "netobjj",
   "license": "ISC"
