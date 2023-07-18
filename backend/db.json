@@ -1,53 +1,7 @@
 {
-    "associations": [
-        {
-            "name": "ACP",
-            "clubs": [
-                {
-                    "name": "Associação de Cristo 1",
-                    "time_arrived": "2023-07-16 14:22:02"
-                },
-                {
-                    "name": "Associação de Cristo 2",
-                    "time_arrived": "2023-07-16 14:22:02"
-                },
-                {
-                    "name": "Associação de Cristo 3",
-                    "time_arrived": "2023-07-16 14:22:02"
-                }
-            ]
-        },{
-            "name": "BCS",
-            "clubs": [
-                {
-                    "name": "Bondade de Cristo 1",
-                    "time_arrived": "2023-07-16 14:22:02"
-                },
-                {
-                    "name": "Bondade de Cristo 2",
-                    "time_arrived": "2023-07-16 14:22:02"
-                },
-                {
-                    "name": "Bondade de Cristo 3",
-                    "time_arrived": "2023-07-16 14:22:02"
-                }
-            ]
-        },{
-            "name": "CCV",
-            "clubs": [
-                {
-                    "name": "Com Cristo Viveremos 1",
-                    "time_arrived": "2023-07-16 14:22:02"
-                },
-                {
-                    "name": "Com Cristo Viveremos 2",
-                    "time_arrived": "2023-07-16 14:22:02"
-                },
-                {
-                    "name": "Com Cristo Viveremos 3",
-                    "time_arrived": "2023-07-16 14:22:02"
-                }
-            ]
-        }
-    ]
+    "club": {
+        "association": "ACP",
+        "name": "Associação de Cristo 1",
+        "time_arrived": "2023-07-16 14:22:02"
+    }
 }
