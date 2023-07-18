@@ -29,7 +29,7 @@ io.on('connection', (socket) => {
 
 function dataUpdate(socket) {
     // get clubs that arrived
-    let club_arrived = JSON.parse(db);
+    let club_arrived = db;
     if(club_arrived) {
         socket.emit('dataupdate', club_arrived )
     } else {
@@ -37,7 +37,7 @@ function dataUpdate(socket) {
     }
 
 
-    /* setTimeout(() =>{
+    setTimeout(() =>{
         dataUpdate(socket);
-    }, 5000) */
+    }, 10000)
 }

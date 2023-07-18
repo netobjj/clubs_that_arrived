@@ -14,9 +14,10 @@ import { ChartAssociationsComponent } from './chart-associations/chart-associati
 
 export class AppComponent implements OnInit {
   title = 'frontend';
-  club: string;
+  name_club: string;
   name_association: string;
-  canShow: boolean = false;
+  canShow_new_club: boolean = false;
+  canShow_last_club_and_chart: boolean = false;
 
   constructor( private srv: SocketService) { }
 
@@ -24,18 +25,20 @@ export class AppComponent implements OnInit {
 
     this.srv.listen('dataupdate').subscribe((res: any) => {
 
-      if(res != "") { 
+      if(res != "" && res.club.name != this.name_club) { 
         //Irá renderizar o novo Clube
-        this.canShow = true;
-        this.club = res.name;
-        this.name_association = res.association;
+        this.canShow_new_club = true;
+        this.name_club = res.club.name;
+        this.name_association = res.club.association;
 
       } else {
+        this.canShow_new_club = false;
+        this.canShow_last_club_and_chart = true;
         // Apenas esconde o novo clube e renderiza o gráfico com o último clube
       }
       
 
-      console.log(res)
+      console.log(res.club.association)
     });
   }
 }

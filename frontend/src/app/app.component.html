@@ -1,7 +1,7 @@
 <div style="width:100%">
-    {{ club }}
     <canvas id="canvas"></canvas>
-    <club-arrived-new-club-arrived [name]="club" [association]="name_association" [canShow]="canShow"> </club-arrived-new-club-arrived>
-    <club-arrived-last-club-arrived></club-arrived-last-club-arrived>
+    <club-arrived-new-club-arrived [name]="name_club" [association]="name_association" [canShow]="canShow_new_club"> </club-arrived-new-club-arrived>
+    <club-arrived-last-club-arrived [canShow]="canShow_last_club_and_chart"></club-arrived-last-club-arrived>
+    <club-arrived-chart-associations [canShow]="canShow_last_club_and_chart"></club-arrived-chart-associations>
     
   </div>
