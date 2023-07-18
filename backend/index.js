@@ -5,7 +5,9 @@ const io = require('socket.io')(http, {
         origin: "*"
     }
 });
+
 const cors = require('cors');
+import  './db.json'
 
 app.use(cors())
 
@@ -22,10 +24,13 @@ io.on('connection', (socket) =>{
     dataUpdate(socket);
 });
 
+
+
 function dataUpdate(socket) {
+    // get clubs that arrived
     socket.emit('dataupdate', "Clube 'Louvadores' da ACM chegou!" + new Date().toLocaleString())//Array.from({length: 8}, ()=> Math.floor(Math.random() * 40)));
 
-    setTimeout(() =>{
+    /* setTimeout(() =>{
         dataUpdate(socket);
-    }, 5000)
+    }, 5000) */
 }
