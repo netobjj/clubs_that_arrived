@@ -9,6 +9,8 @@ export class LastClubArrivedComponent implements OnInit {
   //@Input() name: string = '';
   //@Input() association: string = '';
   @Input() canShow: boolean = false;
+  @Input() association: string;
+  @Input() name: string;
 
   constructor() {}
 
