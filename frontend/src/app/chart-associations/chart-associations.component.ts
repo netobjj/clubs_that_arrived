@@ -13,6 +13,7 @@ export class ChartAssociationsComponent {
   @Input() name: string = '';
   @Input() association: string = '';
   @Input() canShow: boolean = false;
+  @Input() chart: any;
 
   single: any[];
   view: any = [700, 400]; // Dimensões do gráfico

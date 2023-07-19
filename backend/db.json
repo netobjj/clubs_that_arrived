@@ -3,5 +3,23 @@
         "association": "ACP",
         "name": "Associação de Cristo 1",
         "time_arrived": "2023-07-16 14:22:02"
-    }
+    },
+    "chart": [
+        {
+            "name": "ACS",
+            "value": 90
+        },
+        {
+            "name": "ACB",
+            "value": 20
+        },
+        {
+            "name": "ACC",
+            "value": 5
+        },
+        {
+            "name": "ACD",
+            "value": 10
+        }
+    ]
 }

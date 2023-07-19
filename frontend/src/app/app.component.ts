@@ -22,13 +22,14 @@ export class AppComponent implements OnInit {
   canShow_last_club_and_chart: boolean = false;
   last_name_association: string;
   last_name_club: string;
+  chart: any;
 
   constructor(private srv: SocketService) { }
 
   ngOnInit() {
 
     this.srv.listen('dataupdate').subscribe((res: any) => {
-
+      
       if (res != "" && res.club.name != this.new_name_club) {
         //Irá renderizar o novo Clube
         this.canShow_new_club = true;
@@ -42,6 +43,7 @@ export class AppComponent implements OnInit {
       } else {
         this.canShow_new_club = false;
         this.canShow_last_club_and_chart = true;
+        this.chart = res.chart;
         // Apenas esconde o novo clube e renderiza o gráfico com o último clube
       }
 
