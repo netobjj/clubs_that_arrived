@@ -1,5 +1,6 @@
 <div>
     <div *ngIf="canShow" class="chart">
+        <!-- [customColors]="barCustomColors()" -->
         <ngx-charts-bar-vertical
             [view]="view"
             [scheme]="colorScheme"
@@ -10,7 +11,8 @@
             [showXAxisLabel]="showXAxisLabel"
             [showYAxisLabel]="showYAxisLabel"
             [xAxisLabel]="xAxisLabel"
-            [yAxisLabel]="yAxisLabel">
+            [yAxisLabel]="yAxisLabel"
+            [showDataLabel]=true>
         </ngx-charts-bar-vertical>
     </div>
 </div>
